@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/3.13.0-rc2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/3.13.0-rc2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/g++-7 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/3.13.0-rc2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/3.13.0-rc2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f9669/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f9669.dir/build.make CMakeFiles/cmTC_f9669.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f9669.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_f9669.dir/testCCompiler.c.o   -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_f9669
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9669.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_f9669.dir/testCCompiler.c.o  -o cmTC_f9669 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d4fd3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d4fd3.dir/build.make CMakeFiles/cmTC_d4fd3.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4fd3.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d4fd3.dir/testCCompiler.c.o   -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_d4fd3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4fd3.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_d4fd3.dir/testCCompiler.c.o  -o cmTC_d4fd3 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_481d6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_481d6.dir/build.make CMakeFiles/cmTC_481d6.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_481d6
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_481d6.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o  -o cmTC_481d6 
+Run Build Command:"/usr/bin/make" "cmTC_88350/fast"
+/usr/bin/make -f CMakeFiles/cmTC_88350.dir/build.make CMakeFiles/cmTC_88350.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_88350
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88350.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o  -o cmTC_88350 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_481d6' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLlPc0M.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_481d6 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_88350' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdsY3Hx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_88350 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_481d6/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_481d6.dir/build.make CMakeFiles/cmTC_481d6.dir/build]
-  ignore line: [make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_481d6]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_481d6.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o  -o cmTC_481d6 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_88350/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_88350.dir/build.make CMakeFiles/cmTC_88350.dir/build]
+  ignore line: [make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_88350]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88350.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o  -o cmTC_88350 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_481d6' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLlPc0M.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_481d6 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_88350' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdsY3Hx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_88350 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccLlPc0M.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccdsY3Hx.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_481d6] ==> ignore
+    arg [cmTC_88350] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_481d6.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_88350.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -150,17 +150,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_59b7c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_59b7c.dir/build.make CMakeFiles/cmTC_59b7c.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_59b7c.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_59b7c.dir/feature_tests.c.o   -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_59b7c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59b7c.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_59b7c.dir/feature_tests.c.o  -o cmTC_59b7c 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_288a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_288a4.dir/build.make CMakeFiles/cmTC_288a4.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_288a4.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_288a4.dir/feature_tests.c.o   -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_288a4
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_288a4.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_288a4.dir/feature_tests.c.o  -o cmTC_288a4 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -170,17 +170,17 @@ make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMak
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c356f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c356f.dir/build.make CMakeFiles/cmTC_c356f.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c356f.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_c356f.dir/feature_tests.c.o   -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c356f
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c356f.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_c356f.dir/feature_tests.c.o  -o cmTC_c356f 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_e25be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e25be.dir/build.make CMakeFiles/cmTC_e25be.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e25be.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_e25be.dir/feature_tests.c.o   -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e25be
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e25be.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_e25be.dir/feature_tests.c.o  -o cmTC_e25be 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -190,17 +190,17 @@ make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMak
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_37cae/fast"
-/usr/bin/make -f CMakeFiles/cmTC_37cae.dir/build.make CMakeFiles/cmTC_37cae.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_37cae.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_37cae.dir/feature_tests.c.o   -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_37cae
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37cae.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_37cae.dir/feature_tests.c.o  -o cmTC_37cae 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_22627/fast"
+/usr/bin/make -f CMakeFiles/cmTC_22627.dir/build.make CMakeFiles/cmTC_22627.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22627.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_22627.dir/feature_tests.c.o   -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_22627
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22627.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_22627.dir/feature_tests.c.o  -o cmTC_22627 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -208,30 +208,30 @@ make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMak
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8c6fd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8c6fd.dir/build.make CMakeFiles/cmTC_8c6fd.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8c6fd.dir/testCXXCompiler.cxx.o
-/usr/bin/g++-7    -std=c++17    -o CMakeFiles/cmTC_8c6fd.dir/testCXXCompiler.cxx.o -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_8c6fd
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c6fd.dir/link.txt --verbose=1
-/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_8c6fd.dir/testCXXCompiler.cxx.o  -o cmTC_8c6fd 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9a9c5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9a9c5.dir/build.make CMakeFiles/cmTC_9a9c5.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9a9c5.dir/testCXXCompiler.cxx.o
+/usr/bin/g++-7    -std=c++17    -o CMakeFiles/cmTC_9a9c5.dir/testCXXCompiler.cxx.o -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_9a9c5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a9c5.dir/link.txt --verbose=1
+/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_9a9c5.dir/testCXXCompiler.cxx.o  -o cmTC_9a9c5 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cf53e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cf53e.dir/build.make CMakeFiles/cmTC_cf53e.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++-7    -std=c++17    -o CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_cf53e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf53e.dir/link.txt --verbose=1
-/usr/bin/g++-7  -std=c++17    -v CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_cf53e 
+Run Build Command:"/usr/bin/make" "cmTC_bbf91/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bbf91.dir/build.make CMakeFiles/cmTC_bbf91.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++-7    -std=c++17    -o CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_bbf91
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbf91.dir/link.txt --verbose=1
+/usr/bin/g++-7  -std=c++17    -v CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_bbf91 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/g++-7
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -243,24 +243,24 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~16.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-std=c++1z' '-v' '-o' 'cmTC_cf53e' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0HN4kD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_cf53e /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-std=c++1z' '-v' '-o' 'cmTC_cf53e' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-std=c++1z' '-v' '-o' 'cmTC_bbf91' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccva7szn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_bbf91 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-std=c++1z' '-v' '-o' 'cmTC_bbf91' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_cf53e/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_cf53e.dir/build.make CMakeFiles/cmTC_cf53e.dir/build]
-  ignore line: [make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++-7    -std=c++17    -o CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_cf53e]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf53e.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++-7  -std=c++17    -v CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_cf53e ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_bbf91/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_bbf91.dir/build.make CMakeFiles/cmTC_bbf91.dir/build]
+  ignore line: [make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++-7    -std=c++17    -o CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_bbf91]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbf91.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++-7  -std=c++17    -v CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_bbf91 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/g++-7]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -272,13 +272,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~16.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-std=c++1z' '-v' '-o' 'cmTC_cf53e' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0HN4kD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_cf53e /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++1z' '-v' '-o' 'cmTC_bbf91' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccva7szn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_bbf91 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc0HN4kD.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccva7szn.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_cf53e] ==> ignore
+    arg [cmTC_bbf91] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbegin.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_cf53e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_bbf91.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -332,17 +332,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f8758/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f8758.dir/build.make CMakeFiles/cmTC_f8758.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f8758.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++17    -std=c++1z -o CMakeFiles/cmTC_f8758.dir/feature_tests.cxx.o -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f8758
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8758.dir/link.txt --verbose=1
-/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_f8758.dir/feature_tests.cxx.o  -o cmTC_f8758 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_5f8b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f8b2.dir/build.make CMakeFiles/cmTC_5f8b2.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5f8b2.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++17    -std=c++1z -o CMakeFiles/cmTC_5f8b2.dir/feature_tests.cxx.o -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5f8b2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f8b2.dir/link.txt --verbose=1
+/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_5f8b2.dir/feature_tests.cxx.o  -o cmTC_5f8b2 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -405,17 +405,17 @@ make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMak
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_19824/fast"
-/usr/bin/make -f CMakeFiles/cmTC_19824.dir/build.make CMakeFiles/cmTC_19824.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_19824.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++17    -std=c++14 -o CMakeFiles/cmTC_19824.dir/feature_tests.cxx.o -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_19824
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19824.dir/link.txt --verbose=1
-/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_19824.dir/feature_tests.cxx.o  -o cmTC_19824 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_afdbd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_afdbd.dir/build.make CMakeFiles/cmTC_afdbd.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_afdbd.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++17    -std=c++14 -o CMakeFiles/cmTC_afdbd.dir/feature_tests.cxx.o -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_afdbd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afdbd.dir/link.txt --verbose=1
+/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_afdbd.dir/feature_tests.cxx.o  -o cmTC_afdbd 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -478,17 +478,17 @@ make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMak
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_01437/fast"
-/usr/bin/make -f CMakeFiles/cmTC_01437.dir/build.make CMakeFiles/cmTC_01437.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_01437.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++17    -std=c++11 -o CMakeFiles/cmTC_01437.dir/feature_tests.cxx.o -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_01437
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01437.dir/link.txt --verbose=1
-/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_01437.dir/feature_tests.cxx.o  -o cmTC_01437 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_2101f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2101f.dir/build.make CMakeFiles/cmTC_2101f.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2101f.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++17    -std=c++11 -o CMakeFiles/cmTC_2101f.dir/feature_tests.cxx.o -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_2101f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2101f.dir/link.txt --verbose=1
+/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_2101f.dir/feature_tests.cxx.o  -o cmTC_2101f 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -551,17 +551,17 @@ make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMak
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fb114/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fb114.dir/build.make CMakeFiles/cmTC_fb114.dir/build
-make[1]: Entering directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fb114.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++17    -std=c++98 -o CMakeFiles/cmTC_fb114.dir/feature_tests.cxx.o -c /home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_fb114
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb114.dir/link.txt --verbose=1
-/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_fb114.dir/feature_tests.cxx.o  -o cmTC_fb114 
-make[1]: Leaving directory '/home/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_e848b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e848b.dir/build.make CMakeFiles/cmTC_e848b.dir/build
+make[1]: Entering directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e848b.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++17    -std=c++98 -o CMakeFiles/cmTC_e848b.dir/feature_tests.cxx.o -c /home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e848b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e848b.dir/link.txt --verbose=1
+/usr/bin/g++-7  -std=c++17     CMakeFiles/cmTC_e848b.dir/feature_tests.cxx.o  -o cmTC_e848b 
+make[1]: Leaving directory '/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
