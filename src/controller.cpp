@@ -9,6 +9,7 @@ void Controller::ChangeDirection(Snake &snake, Snake::Direction input,
   return;
 }
 
+//TODO: Update input to include WASD, E and / input
 void Controller::HandleInput(bool &running, Snake &snake) const {
   SDL_Event e;
   while (SDL_PollEvent(&e)) {
