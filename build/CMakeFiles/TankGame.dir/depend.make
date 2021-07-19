@@ -4,6 +4,7 @@
 CMakeFiles/TankGame.dir/src/controller.cpp.o: ../src/controller.cpp
 CMakeFiles/TankGame.dir/src/controller.cpp.o: ../src/controller.h
 CMakeFiles/TankGame.dir/src/controller.cpp.o: ../src/snake.h
+CMakeFiles/TankGame.dir/src/controller.cpp.o: ../src/tank.h
 CMakeFiles/TankGame.dir/src/controller.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/TankGame.dir/src/controller.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/TankGame.dir/src/controller.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -53,6 +54,7 @@ CMakeFiles/TankGame.dir/src/game.cpp.o: ../src/game.cpp
 CMakeFiles/TankGame.dir/src/game.cpp.o: ../src/game.h
 CMakeFiles/TankGame.dir/src/game.cpp.o: ../src/renderer.h
 CMakeFiles/TankGame.dir/src/game.cpp.o: ../src/snake.h
+CMakeFiles/TankGame.dir/src/game.cpp.o: ../src/tank.h
 CMakeFiles/TankGame.dir/src/game.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/TankGame.dir/src/game.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/TankGame.dir/src/game.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -102,6 +104,7 @@ CMakeFiles/TankGame.dir/src/main.cpp.o: ../src/game.h
 CMakeFiles/TankGame.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/TankGame.dir/src/main.cpp.o: ../src/renderer.h
 CMakeFiles/TankGame.dir/src/main.cpp.o: ../src/snake.h
+CMakeFiles/TankGame.dir/src/main.cpp.o: ../src/tank.h
 CMakeFiles/TankGame.dir/src/main.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/TankGame.dir/src/main.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/TankGame.dir/src/main.cpp.o: /usr/include/SDL2/SDL_atomic.h

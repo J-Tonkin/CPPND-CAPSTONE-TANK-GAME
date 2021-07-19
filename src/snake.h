@@ -6,7 +6,7 @@
 
 class Snake {
  public:
-  enum class Direction { kUp, kDown, kLeft, kRight };
+  enum class Direction { kUp, kDown, kLeft, kRight, none };
 
   Snake(int grid_width, int grid_height)
       : grid_width(grid_width),
@@ -19,7 +19,7 @@ class Snake {
   void GrowBody();
   bool SnakeCell(int x, int y);
 
-  Direction direction = Direction::kUp;
+  Direction direction = Direction::none;
 
   float speed{0.1f};
   int size{1};

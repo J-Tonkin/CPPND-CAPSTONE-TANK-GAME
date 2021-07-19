@@ -9,6 +9,16 @@
 /home/workspace/CppND-Capstone-Tank-Game/src/controller.h
 snake.h
 /home/workspace/CppND-Capstone-Tank-Game/src/snake.h
+tank.h
+/home/workspace/CppND-Capstone-Tank-Game/src/tank.h
+
+/home/workspace/CppND-Capstone-Tank-Game/src/game.cpp
+game.h
+/home/workspace/CppND-Capstone-Tank-Game/src/game.h
+iostream
+-
+SDL.h
+/home/workspace/CppND-Capstone-Tank-Game/src/SDL.h
 
 /home/workspace/CppND-Capstone-Tank-Game/src/game.h
 random
@@ -22,16 +32,6 @@ renderer.h
 snake.h
 /home/workspace/CppND-Capstone-Tank-Game/src/snake.h
 
-/home/workspace/CppND-Capstone-Tank-Game/src/main.cpp
-iostream
--
-controller.h
-/home/workspace/CppND-Capstone-Tank-Game/src/controller.h
-game.h
-/home/workspace/CppND-Capstone-Tank-Game/src/game.h
-renderer.h
-/home/workspace/CppND-Capstone-Tank-Game/src/renderer.h
-
 /home/workspace/CppND-Capstone-Tank-Game/src/renderer.h
 vector
 -
@@ -41,6 +41,12 @@ snake.h
 /home/workspace/CppND-Capstone-Tank-Game/src/snake.h
 
 /home/workspace/CppND-Capstone-Tank-Game/src/snake.h
+vector
+-
+SDL.h
+/home/workspace/CppND-Capstone-Tank-Game/src/SDL.h
+
+/home/workspace/CppND-Capstone-Tank-Game/src/tank.h
 vector
 -
 SDL.h

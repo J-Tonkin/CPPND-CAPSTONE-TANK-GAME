@@ -23,18 +23,24 @@ void Snake::UpdateHead() {
   switch (direction) {
     case Direction::kUp:
       head_y -= speed;
+      direction = Direction::none;
       break;
 
     case Direction::kDown:
       head_y += speed;
+      direction = Direction::none;
       break;
 
     case Direction::kLeft:
       head_x -= speed;
+      direction = Direction::none;
       break;
 
     case Direction::kRight:
       head_x += speed;
+      direction = Direction::none;
+      break;
+    case Direction::none:
       break;
   }
 

@@ -5,6 +5,7 @@ CMakeFiles/TankGame.dir/src/controller.cpp.o
  /home/workspace/CppND-Capstone-Tank-Game/src/controller.cpp
  /home/workspace/CppND-Capstone-Tank-Game/src/controller.h
  /home/workspace/CppND-Capstone-Tank-Game/src/snake.h
+ /home/workspace/CppND-Capstone-Tank-Game/src/tank.h
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h
  /usr/include/SDL2/SDL_atomic.h
@@ -54,6 +55,7 @@ CMakeFiles/TankGame.dir/src/game.cpp.o
  /home/workspace/CppND-Capstone-Tank-Game/src/game.h
  /home/workspace/CppND-Capstone-Tank-Game/src/renderer.h
  /home/workspace/CppND-Capstone-Tank-Game/src/snake.h
+ /home/workspace/CppND-Capstone-Tank-Game/src/tank.h
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h
  /usr/include/SDL2/SDL_atomic.h
@@ -103,6 +105,7 @@ CMakeFiles/TankGame.dir/src/main.cpp.o
  /home/workspace/CppND-Capstone-Tank-Game/src/main.cpp
  /home/workspace/CppND-Capstone-Tank-Game/src/renderer.h
  /home/workspace/CppND-Capstone-Tank-Game/src/snake.h
+ /home/workspace/CppND-Capstone-Tank-Game/src/tank.h
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h
  /usr/include/SDL2/SDL_atomic.h
