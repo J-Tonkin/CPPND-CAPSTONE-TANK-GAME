@@ -79,7 +79,6 @@ void Renderer::Render(Tank &tank1, Tank &tank2) {
     SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x7A, 0xCC, 0x00);
     SDL_RenderFillRect(sdl_renderer, &block);
   }
-  
 
   // Update Screen
   SDL_RenderPresent(sdl_renderer);

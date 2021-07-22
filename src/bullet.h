@@ -18,11 +18,11 @@ class Bullet {
     float pos_y;
 
     private:
-    float speed{1.0f};
+    float speed{0.5f};
     int team;
     int grid_width;
     int grid_height;
-    Direction dir;
+    Direction dir{Direction::kUp};
 };
 
 #endif

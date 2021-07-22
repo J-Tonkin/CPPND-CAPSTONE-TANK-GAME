@@ -10,18 +10,18 @@
 class Tank {
  public:
   
-  Tank(int grid_width, int grid_height)
+  Tank(int grid_width, int grid_height, int start)
       : grid_width(grid_width),
         grid_height(grid_height),
-        pos_x(grid_width / 2),
-        pos_y(grid_height / 2) {}
+        pos_x((grid_width / 3) * start),
+        pos_y((grid_height / 3) * start) {}
 
   void Update();
   void Fire(int team);
   void PosUpdate(Direction input);
   bool TankCell(int x, int y, Tank &tank);
 
-  Direction direction = Direction::none;
+  Direction direction = Direction::kUp;
 
   float speed{1.0f};
   int size{1};

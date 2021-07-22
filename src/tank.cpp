@@ -8,17 +8,17 @@ void Tank::PosUpdate(Direction input) {
     direction = input;
     switch (input){
         case Direction::kUp:
-        pos_y -= speed;
-        break;
+          if(pos_y > 0) pos_y -= speed;
+          break;
         case Direction::kDown:
-        pos_y += speed;
-        break;
+          if(pos_y < grid_height-1) pos_y += speed;
+          break;
         case Direction::kLeft:
-        pos_x -= speed;
-        break;
+          if(pos_x > 0) pos_x -= speed;
+          break;
         case Direction::kRight:
-        pos_x += speed;
-        break;
+          if(pos_x < grid_width-1) pos_x += speed;
+          break;
     }
 }
 
