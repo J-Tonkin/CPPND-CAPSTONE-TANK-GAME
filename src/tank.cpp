@@ -23,8 +23,7 @@ void Tank::PosUpdate(Direction input) {
 }
 
 void Tank::Fire(int team) {
-    Bullet bullet(pos_x,pos_y,direction,team,grid_width,grid_height);
-    projectiles.emplace_back(bullet);
+    projectiles.push_back(std::move(std::make_unique<Bullet>(pos_x,pos_y,direction,team,grid_width,grid_height)));
     std::cout << "Number of bullets: " << projectiles.size() << std::endl;
     std::cout << "FIRE!" << std::endl;
 }

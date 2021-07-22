@@ -38,7 +38,7 @@ Renderer::~Renderer() {
   SDL_Quit();
 }
 
-void Renderer::Render(Tank const tank1, Tank const tank2) {
+void Renderer::Render(Tank &tank1, Tank &tank2) {
   SDL_Rect block;
   block.w = screen_width / grid_width;
   block.h = screen_height / grid_height;
@@ -57,15 +57,29 @@ void Renderer::Render(Tank const tank1, Tank const tank2) {
   }
   SDL_RenderFillRect(sdl_renderer, &block);
 
-  // Render Tanks
   block.x = static_cast<int>(tank2.pos_x) * block.w;
   block.y = static_cast<int>(tank2.pos_y) * block.h;
   if (tank2.alive) {
-    SDL_SetRenderDrawColor(sdl_renderer, 0x00, 0x7A, 0xCC, 0x00);
+    SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x7A, 0x00, 0xFF);
   } else {
     SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x00, 0x00, 0xFF);
   }
   SDL_RenderFillRect(sdl_renderer, &block);
+
+  //Render bullets
+  for(size_t i = 0; i < tank1.projectiles.size(); i++){
+    block.x = static_cast<int>(tank1.projectiles[i]->pos_x) * block.w;
+    block.y = static_cast<int>(tank1.projectiles[i]->pos_y) * block.h;
+    SDL_SetRenderDrawColor(sdl_renderer, 0x00, 0x7A, 0x00, 0xFF);
+    SDL_RenderFillRect(sdl_renderer, &block);
+  }
+  for(size_t i = 0; i < tank2.projectiles.size(); i++){
+    block.x = static_cast<int>(tank2.projectiles[i]->pos_x) * block.w;
+    block.y = static_cast<int>(tank2.projectiles[i]->pos_y) * block.h;
+    SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x7A, 0xCC, 0x00);
+    SDL_RenderFillRect(sdl_renderer, &block);
+  }
+  
 
   // Update Screen
   SDL_RenderPresent(sdl_renderer);

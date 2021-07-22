@@ -2,6 +2,7 @@
 #define TANK_H
 
 #include <vector>
+#include <memory>
 #include "SDL.h"
 #include "bullet.h"
 #include "controller.h"
@@ -27,7 +28,7 @@ class Tank {
   bool alive{true};
   float pos_x;
   float pos_y;
-  std::vector<Bullet> projectiles;
+  std::vector<std::unique_ptr<Bullet>> projectiles;
  
  private:
   int grid_width;

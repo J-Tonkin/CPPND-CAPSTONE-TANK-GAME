@@ -1,5 +1,6 @@
 #include "game.h"
 #include <iostream>
+#include <memory>
 #include "SDL.h"
 
 Game::Game(std::size_t grid_width, std::size_t grid_height)
@@ -68,11 +69,11 @@ void Game::PlaceFood() {
 */
 void Game::Update() {
   if (!tank1.alive && !tank2.alive) return; //TODO: Change to OR
-  for(Bullet bullet : tank1.projectiles){
-    bullet.Update();
+  for(size_t i = 0; i < tank1.projectiles.size(); i++){
+    (tank2.projectiles[i])->Update();
   }
-  for(Bullet bullet : tank2.projectiles){
-    bullet.Update();
+  for(size_t i = 0; i < tank2.projectiles.size(); i++){
+    (tank2.projectiles[i])->Update();
   }
 }
 

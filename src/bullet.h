@@ -14,10 +14,10 @@ class Bullet {
         grid_width(grid_width), 
         grid_height(grid_height) {};
     void Update();
-
-    private:
     float pos_x;
     float pos_y;
+
+    private:
     float speed{1.0f};
     int team;
     int grid_width;

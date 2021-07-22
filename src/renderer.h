@@ -12,7 +12,7 @@ class Renderer {
            const std::size_t grid_width, const std::size_t grid_height);
   ~Renderer();
 
-  void Render(Tank const tank1, Tank const tank2);
+  void Render(Tank &tank1, Tank &tank2);
   void UpdateWindowTitle(int score, int fps);
 
  private:

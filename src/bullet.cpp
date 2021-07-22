@@ -2,10 +2,10 @@
 #include "bullet.h"
 
 void Bullet::Update(){
-    std::cout << "Bullet Direction: "<< dir << std::endl;
     switch (dir){
         case Direction::kUp:
         pos_y -= speed;
+        std::cout << "Moving bullet up" << std::endl;
         break;
         case Direction::kDown:
         pos_y += speed;
