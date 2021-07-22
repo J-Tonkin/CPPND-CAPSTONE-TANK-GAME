@@ -6,6 +6,7 @@
 #include "controller.h"
 #include "renderer.h"
 #include "snake.h"
+#include "tank.h"
 
 class Game {
  public:
@@ -16,8 +17,8 @@ class Game {
   int GetSize() const;
 
  private:
-  Snake snake;
-  Snake snake2;
+  Tank tank1;
+  Tank tank2;
   SDL_Point food;
 
   std::random_device dev;

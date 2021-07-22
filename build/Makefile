@@ -123,6 +123,33 @@ TankGame/fast:
 	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/build
 .PHONY : TankGame/fast
 
+src/bullet.o: src/bullet.cpp.o
+
+.PHONY : src/bullet.o
+
+# target to build an object file
+src/bullet.cpp.o:
+	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/bullet.cpp.o
+.PHONY : src/bullet.cpp.o
+
+src/bullet.i: src/bullet.cpp.i
+
+.PHONY : src/bullet.i
+
+# target to preprocess a source file
+src/bullet.cpp.i:
+	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/bullet.cpp.i
+.PHONY : src/bullet.cpp.i
+
+src/bullet.s: src/bullet.cpp.s
+
+.PHONY : src/bullet.s
+
+# target to generate assembly for a file
+src/bullet.cpp.s:
+	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/bullet.cpp.s
+.PHONY : src/bullet.cpp.s
+
 src/controller.o: src/controller.cpp.o
 
 .PHONY : src/controller.o
@@ -258,6 +285,33 @@ src/snake.cpp.s:
 	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/snake.cpp.s
 .PHONY : src/snake.cpp.s
 
+src/tank.o: src/tank.cpp.o
+
+.PHONY : src/tank.o
+
+# target to build an object file
+src/tank.cpp.o:
+	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/tank.cpp.o
+.PHONY : src/tank.cpp.o
+
+src/tank.i: src/tank.cpp.i
+
+.PHONY : src/tank.i
+
+# target to preprocess a source file
+src/tank.cpp.i:
+	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/tank.cpp.i
+.PHONY : src/tank.cpp.i
+
+src/tank.s: src/tank.cpp.s
+
+.PHONY : src/tank.s
+
+# target to generate assembly for a file
+src/tank.cpp.s:
+	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/tank.cpp.s
+.PHONY : src/tank.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TankGame"
 	@echo "... edit_cache"
+	@echo "... src/bullet.o"
+	@echo "... src/bullet.i"
+	@echo "... src/bullet.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
@@ -282,6 +339,9 @@ help:
 	@echo "... src/snake.o"
 	@echo "... src/snake.i"
 	@echo "... src/snake.s"
+	@echo "... src/tank.o"
+	@echo "... src/tank.i"
+	@echo "... src/tank.s"
 .PHONY : help
 
 

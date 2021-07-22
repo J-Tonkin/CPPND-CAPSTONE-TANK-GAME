@@ -21,7 +21,7 @@ class Snake {
 
   Direction direction = Direction::none;
 
-  float speed{0.1f};
+  float speed{1.0f};
   int size{1};
   bool alive{true};
   float head_x;

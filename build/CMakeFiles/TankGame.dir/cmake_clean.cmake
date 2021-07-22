@@ -3,7 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/TankGame.dir/src/game.cpp.o"
   "CMakeFiles/TankGame.dir/src/controller.cpp.o"
   "CMakeFiles/TankGame.dir/src/renderer.cpp.o"
+  "CMakeFiles/TankGame.dir/src/tank.cpp.o"
   "CMakeFiles/TankGame.dir/src/snake.cpp.o"
+  "CMakeFiles/TankGame.dir/src/bullet.cpp.o"
   "TankGame.pdb"
   "TankGame"
 )

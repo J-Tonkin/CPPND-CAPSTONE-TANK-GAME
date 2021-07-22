@@ -1,67 +1,57 @@
 #include "controller.h"
 #include <iostream>
 #include "SDL.h"
-#include "snake.h"
 #include "tank.h"
 
-void Controller::ChangeDirection(Snake &tank, Snake::Direction input) const {
-  //Key input function
-  tank.direction = input;
+void Controller::PosUpdate(Tank &tank, Direction input) const {
+  tank.PosUpdate(input);
   return;
+}
 
+void Controller::Fire(Tank &tank, int team) const {
+  tank.Fire(team);
+  return;
 }
 
 //TODO: Update input to include WASD, E and / input
-void Controller::HandleInput(bool &running, Snake &snake, Snake &snake2) const {
+void Controller::HandleInput(bool &running, Tank &tank1, Tank &tank2) const {
   SDL_Event e;
   while (SDL_PollEvent(&e)) {
     if (e.type == SDL_QUIT) {
       running = false;
     } else if (e.type == SDL_KEYDOWN) {
       switch (e.key.keysym.sym) {
+        //Inputs for direction keys
         case SDLK_UP:
-          //Insert function call to whatever button does
-          Controller::ChangeDirection(snake, Snake::Direction::kUp);
+          Controller::PosUpdate(tank1, Direction::kUp);
           break;
-
-        case SDLK_DOWN:
-        Controller::ChangeDirection(snake, Snake::Direction::kDown);
-          //
-          break;
-
-        case SDLK_LEFT:
-        Controller::ChangeDirection(snake, Snake::Direction::kLeft);
-          //
-          break;
-
-        case SDLK_RIGHT:
-        Controller::ChangeDirection(snake, Snake::Direction::kRight);
-          //
-          break;
-
-        case SDLK_RCTRL:
-        Controller::ChangeDirection(snake, Snake::Direction::kUp);
-          //Key input
-          break;
-
         case SDLK_w:
-          Controller::ChangeDirection(snake2, Snake::Direction::kUp);
+          Controller::PosUpdate(tank2, Direction::kUp);
           break;
-
+        case SDLK_DOWN:
+          Controller::PosUpdate(tank1, Direction::kDown);
+          break;
         case SDLK_s:
-          Controller::ChangeDirection(snake2, Snake::Direction::kDown);
+          Controller::PosUpdate(tank2, Direction::kDown);
           break;
-
+        case SDLK_LEFT:
+          Controller::PosUpdate(tank1, Direction::kLeft);
+          break;
         case SDLK_a:
-          Controller::ChangeDirection(snake2, Snake::Direction::kLeft);
+          Controller::PosUpdate(tank2, Direction::kLeft);
           break;
-
+        case SDLK_RIGHT:
+          Controller::PosUpdate(tank1, Direction::kRight);
+          break;
         case SDLK_d:
-          Controller::ChangeDirection(snake2, Snake::Direction::kRight);
+          Controller::PosUpdate(tank2, Direction::kRight);
           break;
-
+        //Input for firing buttons  
+        case SDLK_RCTRL:
+          Controller::Fire(tank1, 1);
+          break;
         case SDLK_SPACE:
-          //Key input
+          Controller::Fire(tank2, 2);
           break;
       }
     }

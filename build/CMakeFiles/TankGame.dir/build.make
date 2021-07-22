@@ -109,9 +109,22 @@ CMakeFiles/TankGame.dir/src/renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TankGame.dir/src/renderer.cpp.s"
 	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/CppND-Capstone-Tank-Game/src/renderer.cpp -o CMakeFiles/TankGame.dir/src/renderer.cpp.s
 
+CMakeFiles/TankGame.dir/src/tank.cpp.o: CMakeFiles/TankGame.dir/flags.make
+CMakeFiles/TankGame.dir/src/tank.cpp.o: ../src/tank.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TankGame.dir/src/tank.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TankGame.dir/src/tank.cpp.o -c /home/workspace/CppND-Capstone-Tank-Game/src/tank.cpp
+
+CMakeFiles/TankGame.dir/src/tank.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TankGame.dir/src/tank.cpp.i"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/CppND-Capstone-Tank-Game/src/tank.cpp > CMakeFiles/TankGame.dir/src/tank.cpp.i
+
+CMakeFiles/TankGame.dir/src/tank.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TankGame.dir/src/tank.cpp.s"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/CppND-Capstone-Tank-Game/src/tank.cpp -o CMakeFiles/TankGame.dir/src/tank.cpp.s
+
 CMakeFiles/TankGame.dir/src/snake.cpp.o: CMakeFiles/TankGame.dir/flags.make
 CMakeFiles/TankGame.dir/src/snake.cpp.o: ../src/snake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TankGame.dir/src/snake.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TankGame.dir/src/snake.cpp.o"
 	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TankGame.dir/src/snake.cpp.o -c /home/workspace/CppND-Capstone-Tank-Game/src/snake.cpp
 
 CMakeFiles/TankGame.dir/src/snake.cpp.i: cmake_force
@@ -122,13 +135,28 @@ CMakeFiles/TankGame.dir/src/snake.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TankGame.dir/src/snake.cpp.s"
 	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/CppND-Capstone-Tank-Game/src/snake.cpp -o CMakeFiles/TankGame.dir/src/snake.cpp.s
 
+CMakeFiles/TankGame.dir/src/bullet.cpp.o: CMakeFiles/TankGame.dir/flags.make
+CMakeFiles/TankGame.dir/src/bullet.cpp.o: ../src/bullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TankGame.dir/src/bullet.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TankGame.dir/src/bullet.cpp.o -c /home/workspace/CppND-Capstone-Tank-Game/src/bullet.cpp
+
+CMakeFiles/TankGame.dir/src/bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TankGame.dir/src/bullet.cpp.i"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/CppND-Capstone-Tank-Game/src/bullet.cpp > CMakeFiles/TankGame.dir/src/bullet.cpp.i
+
+CMakeFiles/TankGame.dir/src/bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TankGame.dir/src/bullet.cpp.s"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/CppND-Capstone-Tank-Game/src/bullet.cpp -o CMakeFiles/TankGame.dir/src/bullet.cpp.s
+
 # Object files for target TankGame
 TankGame_OBJECTS = \
 "CMakeFiles/TankGame.dir/src/main.cpp.o" \
 "CMakeFiles/TankGame.dir/src/game.cpp.o" \
 "CMakeFiles/TankGame.dir/src/controller.cpp.o" \
 "CMakeFiles/TankGame.dir/src/renderer.cpp.o" \
-"CMakeFiles/TankGame.dir/src/snake.cpp.o"
+"CMakeFiles/TankGame.dir/src/tank.cpp.o" \
+"CMakeFiles/TankGame.dir/src/snake.cpp.o" \
+"CMakeFiles/TankGame.dir/src/bullet.cpp.o"
 
 # External object files for target TankGame
 TankGame_EXTERNAL_OBJECTS =
@@ -137,10 +165,12 @@ TankGame: CMakeFiles/TankGame.dir/src/main.cpp.o
 TankGame: CMakeFiles/TankGame.dir/src/game.cpp.o
 TankGame: CMakeFiles/TankGame.dir/src/controller.cpp.o
 TankGame: CMakeFiles/TankGame.dir/src/renderer.cpp.o
+TankGame: CMakeFiles/TankGame.dir/src/tank.cpp.o
 TankGame: CMakeFiles/TankGame.dir/src/snake.cpp.o
+TankGame: CMakeFiles/TankGame.dir/src/bullet.cpp.o
 TankGame: CMakeFiles/TankGame.dir/build.make
 TankGame: CMakeFiles/TankGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TankGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/workspace/CppND-Capstone-Tank-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TankGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TankGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
