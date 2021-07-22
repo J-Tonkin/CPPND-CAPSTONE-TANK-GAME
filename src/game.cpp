@@ -3,14 +3,15 @@
 #include <memory>
 #include "SDL.h"
 
-Game::Game(std::size_t grid_width, std::size_t grid_height)
+Game::Game(std::size_t grid_width, std::size_t grid_height, std::vector<std::vector<bool>> &map)
     : tank1(grid_width, grid_height, 1),
       tank2(grid_width, grid_height, 2),
       grid_width(grid_width),
       grid_height(grid_height),
       engine(dev()),
       random_w(0, static_cast<int>(grid_width - 1)),
-      random_h(0, static_cast<int>(grid_height - 1)) {
+      random_h(0, static_cast<int>(grid_height - 1)),
+      map(map) {
   //PlaceFood();
 }
 
@@ -29,7 +30,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
     // Input, Update, Render - the main game loop.
     controller.HandleInput(running, tank1, tank2);
     Update();
-    renderer.Render(tank1, tank2);
+    renderer.Render(tank1, tank2, map);
 
     frame_end = SDL_GetTicks();
 
@@ -40,7 +41,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 
     // After every second, update the window title.
     if (frame_end - title_timestamp >= 1000) {
-      renderer.UpdateWindowTitle(score, frame_count);
+      renderer.UpdateWindowTitle(tank1.score, tank2.score, frame_count);
       frame_count = 0;
       title_timestamp = frame_end;
     }
@@ -70,26 +71,48 @@ void Game::PlaceFood() {
 }
 */
 void Game::Update() {
-  //update bullet positions 
+  tank1.Update();
+  tank2.Update();
   for(size_t i = 0; i < tank1.projectiles.size(); i++){
     (tank1.projectiles[i])->Update();
+    if((tank1.projectiles[i]->pos_x-tank2.pos_x < 1) && (tank1.projectiles[i]->pos_x-tank2.pos_x > -1) && (tank1.projectiles[i]->pos_y-tank2.pos_y < 1) && (tank1.projectiles[i]->pos_y-tank2.pos_y > -1)){
+      tank2.alive = false;
+      tank2.death_time = std::chrono::steady_clock::now();
+      tank1.score += 1;
+      tank1.projectiles.erase(tank1.projectiles.begin()+i);
+      return;
+    }
     if(tank1.projectiles[i]->pos_x > grid_width || tank1.projectiles[i]->pos_x < 0 || tank1.projectiles[i]->pos_y < 0 || tank1.projectiles[i]->pos_y > grid_height){
       tank1.projectiles.erase(tank1.projectiles.begin()+i);
+      return;
     }
+    if(map[static_cast<int>(tank1.projectiles[i]->pos_x)][static_cast<int>(tank1.projectiles[i]->pos_y)]==true) {
+      map[static_cast<int>(tank1.projectiles[i]->pos_x)][static_cast<int>(tank1.projectiles[i]->pos_y)]=false;
+      tank1.projectiles.erase(tank1.projectiles.begin()+i);
+      return;
+    }
+    
   }
   for(size_t i = 0; i < tank2.projectiles.size(); i++){
     (tank2.projectiles[i])->Update();
+    if((tank2.projectiles[i]->pos_x-tank1.pos_x < 1) && (tank2.projectiles[i]->pos_x-tank1.pos_x > -1) && (tank2.projectiles[i]->pos_y-tank1.pos_y < 1) && (tank2.projectiles[i]->pos_y-tank1.pos_y > -1)){
+      tank1.alive = false;
+      tank1.death_time = std::chrono::steady_clock::now();
+      tank2.score += 1;
+      tank2.projectiles.erase(tank2.projectiles.begin()+i);
+      return;
+    }
     if(tank2.projectiles[i]->pos_x > grid_width || tank2.projectiles[i]->pos_x < 0 || tank2.projectiles[i]->pos_y < 0 || tank2.projectiles[i]->pos_y > grid_height){
       tank2.projectiles.erase(tank2.projectiles.begin()+i);
+      return;
+    }
+    if(map[static_cast<int>(tank2.projectiles[i]->pos_x)][static_cast<int>(tank2.projectiles[i]->pos_y)]==true) {
+      map[static_cast<int>(tank2.projectiles[i]->pos_x)][static_cast<int>(tank2.projectiles[i]->pos_y)]=false;
+      tank2.projectiles.erase(tank2.projectiles.begin()+i);
+      return;
     }
   }
-  
-  //Check if tanks are still alive
-  if (!tank1.alive || !tank2.alive) return; 
-  
-  //Check if a bullet has hit a tank
-  
-  
+
 }
 
 int Game::GetScore() const { return score; }

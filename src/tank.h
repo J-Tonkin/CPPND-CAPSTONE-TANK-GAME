@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <memory>
+#include <chrono>
 #include "SDL.h"
 #include "bullet.h"
 #include "controller.h"
@@ -28,6 +29,8 @@ class Tank {
   bool alive{true};
   float pos_x;
   float pos_y;
+  int score{0};
+  std::chrono::steady_clock::time_point death_time;
   std::vector<std::unique_ptr<Bullet>> projectiles;
  
  private:

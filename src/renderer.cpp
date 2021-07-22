@@ -4,7 +4,9 @@
 
 Renderer::Renderer(const std::size_t screen_width,
                    const std::size_t screen_height,
-                   const std::size_t grid_width, const std::size_t grid_height)
+                   const std::size_t grid_width, 
+                   const std::size_t grid_height
+                   )
     : screen_width(screen_width),
       screen_height(screen_height),
       grid_width(grid_width),
@@ -38,7 +40,7 @@ Renderer::~Renderer() {
   SDL_Quit();
 }
 
-void Renderer::Render(Tank &tank1, Tank &tank2) {
+void Renderer::Render(Tank &tank1, Tank &tank2, std::vector<std::vector<bool>> &map) {
   SDL_Rect block;
   block.w = screen_width / grid_width;
   block.h = screen_height / grid_height;
@@ -46,6 +48,18 @@ void Renderer::Render(Tank &tank1, Tank &tank2) {
   // Clear screen
   SDL_SetRenderDrawColor(sdl_renderer, 0x1E, 0x1E, 0x1E, 0xFF);
   SDL_RenderClear(sdl_renderer);
+
+  // Render map
+  for(int i = 0; i < grid_width; ++i){
+    for(int j = 0; j < grid_height; ++j){
+      if(map[i][j] == true){
+      block.x = i * block.w;
+      block.y = j * block.h;
+      SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0xFF, 0xFF, 0x00);
+      SDL_RenderFillRect(sdl_renderer, &block);
+      }
+    }
+  }
 
   // Render Tanks
   block.x = static_cast<int>(tank1.pos_x) * block.w;
@@ -84,7 +98,8 @@ void Renderer::Render(Tank &tank1, Tank &tank2) {
   SDL_RenderPresent(sdl_renderer);
 }
 
-void Renderer::UpdateWindowTitle(int score, int fps) {
-  std::string title{"Tank Score: " + std::to_string(score) + " FPS: " + std::to_string(fps)};
+void Renderer::UpdateWindowTitle(int score1, int score2, int fps) {
+  std::string title{"Tank 1 Score: " + std::to_string(score1) + "    Tank 2 Score: " + std::to_string(score2) + "    FPS: " + std::to_string(fps)};
   SDL_SetWindowTitle(sdl_window, title.c_str());
 }
+

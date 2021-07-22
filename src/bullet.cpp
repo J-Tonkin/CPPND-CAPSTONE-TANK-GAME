@@ -21,6 +21,6 @@ void Bullet::Update(){
         default:
         std::cout << "Default case" << std::endl;
     }
-    
-    std::cout << "Bullet x position: " << pos_x << "    Bullet y position: " << pos_y << std::endl;
+
+    //std::cout << "Bullet x position: " << pos_x << "    Bullet y position: " << pos_y << std::endl;
 }

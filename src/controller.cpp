@@ -4,12 +4,16 @@
 #include "tank.h"
 
 void Controller::PosUpdate(Tank &tank, Direction input) const {
+  if(tank.alive == true){
   tank.PosUpdate(input);
+  }
   return;
 }
 
 void Controller::Fire(Tank &tank, int team) const {
+  if(tank.alive == true){
   tank.Fire(team);
+  }
   return;
 }
 

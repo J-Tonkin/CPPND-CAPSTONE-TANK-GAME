@@ -2,7 +2,11 @@
 #include <cmath>
 #include <iostream>
 
-void Tank::Update(){}
+void Tank::Update(){
+  if(alive == false){
+    if(std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now()-death_time).count()>1000) alive = true;
+  }
+}
 
 void Tank::PosUpdate(Direction input) {
     direction = input;
