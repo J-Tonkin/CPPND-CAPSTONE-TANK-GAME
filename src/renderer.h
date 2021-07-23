@@ -3,7 +3,6 @@
 
 #include <vector>
 #include "SDL.h"
-#include "snake.h"
 #include "tank.h"
 
 class Renderer {

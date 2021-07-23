@@ -14,6 +14,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS} src)
 
-add_executable(TankGame src/main.cpp src/game.cpp src/controller.cpp src/renderer.cpp src/tank.cpp src/snake.cpp src/bullet.cpp)
+add_executable(TankGame src/main.cpp src/game.cpp src/controller.cpp src/renderer.cpp src/tank.cpp src/bullet.cpp)
 string(STRIP ${SDL2_LIBRARIES} SDL2_LIBRARIES)
 target_link_libraries(TankGame ${SDL2_LIBRARIES})

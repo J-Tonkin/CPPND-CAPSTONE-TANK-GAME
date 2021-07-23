@@ -258,33 +258,6 @@ src/renderer.cpp.s:
 	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/renderer.cpp.s
 .PHONY : src/renderer.cpp.s
 
-src/snake.o: src/snake.cpp.o
-
-.PHONY : src/snake.o
-
-# target to build an object file
-src/snake.cpp.o:
-	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/snake.cpp.o
-.PHONY : src/snake.cpp.o
-
-src/snake.i: src/snake.cpp.i
-
-.PHONY : src/snake.i
-
-# target to preprocess a source file
-src/snake.cpp.i:
-	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/snake.cpp.i
-.PHONY : src/snake.cpp.i
-
-src/snake.s: src/snake.cpp.s
-
-.PHONY : src/snake.s
-
-# target to generate assembly for a file
-src/snake.cpp.s:
-	$(MAKE) -f CMakeFiles/TankGame.dir/build.make CMakeFiles/TankGame.dir/src/snake.cpp.s
-.PHONY : src/snake.cpp.s
-
 src/tank.o: src/tank.cpp.o
 
 .PHONY : src/tank.o
@@ -336,9 +309,6 @@ help:
 	@echo "... src/renderer.o"
 	@echo "... src/renderer.i"
 	@echo "... src/renderer.s"
-	@echo "... src/snake.o"
-	@echo "... src/snake.i"
-	@echo "... src/snake.s"
 	@echo "... src/tank.o"
 	@echo "... src/tank.i"
 	@echo "... src/tank.s"

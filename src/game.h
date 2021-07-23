@@ -6,7 +6,6 @@
 #include "SDL.h"
 #include "controller.h"
 #include "renderer.h"
-#include "snake.h"
 #include "tank.h"
 
 class Game {
