@@ -20,7 +20,6 @@ class Tank {
   void Update();
   void Fire(int team);
   void PosUpdate(Direction input);
-  bool TankCell(int x, int y, Tank &tank);
 
   Direction direction = Direction::kUp;
 

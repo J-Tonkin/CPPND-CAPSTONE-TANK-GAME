@@ -51,7 +51,7 @@ void Controller::HandleInput(bool &running, Tank &tank1, Tank &tank2) const {
           Controller::PosUpdate(tank2, Direction::kRight);
           break;
         //Input for firing buttons  
-        case SDLK_RCTRL:
+        case SDLK_KP_0:
           Controller::Fire(tank1, 1);
           break;
         case SDLK_SPACE:

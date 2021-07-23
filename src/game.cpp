@@ -11,9 +11,7 @@ Game::Game(std::size_t grid_width, std::size_t grid_height, std::vector<std::vec
       engine(dev()),
       random_w(0, static_cast<int>(grid_width - 1)),
       random_h(0, static_cast<int>(grid_height - 1)),
-      map(map) {
-  //PlaceFood();
-}
+      map(map) {}
 
 void Game::Run(Controller const &controller, Renderer &renderer,
                std::size_t target_frame_duration) {
