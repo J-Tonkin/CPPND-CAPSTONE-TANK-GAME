@@ -54,22 +54,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
     }
   }
 }
-/*
-void Game::PlaceFood() {
-  int x, y;
-  while (true) {
-    x = random_w(engine);
-    y = random_h(engine);
-    // Check that the location is not occupied by a snake item before placing
-    // food.
-    if (!snake.SnakeCell(x, y)) {
-      food.x = x;
-      food.y = y;
-      return;
-    }
-  }
-}
-*/
+
 void Game::Update() {
   tank1.Update();
   tank2.Update();
@@ -82,12 +67,12 @@ void Game::Update() {
       tank1.projectiles.erase(tank1.projectiles.begin()+i);
       return;
     }
-    if(tank1.projectiles[i]->pos_x > grid_width || tank1.projectiles[i]->pos_x < 0 || tank1.projectiles[i]->pos_y < 0 || tank1.projectiles[i]->pos_y > grid_height){
+    if(CheckEdges(tank1.projectiles[i]->pos_x,tank1.projectiles[i]->pos_y)){
       tank1.projectiles.erase(tank1.projectiles.begin()+i);
       return;
     }
-    if(map[static_cast<int>(tank1.projectiles[i]->pos_x)][static_cast<int>(tank1.projectiles[i]->pos_y)]==true) {
-      map[static_cast<int>(tank1.projectiles[i]->pos_x)][static_cast<int>(tank1.projectiles[i]->pos_y)]=false;
+    if(CheckMap(tank1.projectiles[i]->pos_x,tank1.projectiles[i]->pos_y)) {
+      SetMap(tank1.projectiles[i]->pos_x, tank1.projectiles[i]->pos_y, false);
       tank1.projectiles.erase(tank1.projectiles.begin()+i);
       return;
     }
@@ -102,17 +87,33 @@ void Game::Update() {
       tank2.projectiles.erase(tank2.projectiles.begin()+i);
       return;
     }
-    if(tank2.projectiles[i]->pos_x > grid_width || tank2.projectiles[i]->pos_x < 0 || tank2.projectiles[i]->pos_y < 0 || tank2.projectiles[i]->pos_y > grid_height){
+    if(CheckEdges(tank2.projectiles[i]->pos_x,tank2.projectiles[i]->pos_y)) {
       tank2.projectiles.erase(tank2.projectiles.begin()+i);
       return;
     }
-    if(map[static_cast<int>(tank2.projectiles[i]->pos_x)][static_cast<int>(tank2.projectiles[i]->pos_y)]==true) {
-      map[static_cast<int>(tank2.projectiles[i]->pos_x)][static_cast<int>(tank2.projectiles[i]->pos_y)]=false;
+    if(CheckMap(tank2.projectiles[i]->pos_x,tank2.projectiles[i]->pos_y)) {
+      SetMap(tank2.projectiles[i]->pos_x, tank2.projectiles[i]->pos_y, false);
       tank2.projectiles.erase(tank2.projectiles.begin()+i);
       return;
     }
   }
 
+}
+
+//Checks the bool status of a point on the map
+bool Game::CheckMap(float x, float y) const {
+  if(x >= grid_width) x = grid_width-1; //This was causing a segmentation fault becuase x exceeded the size of the vector
+  return map[static_cast<int>(x)][static_cast<int>(y)];
+}
+
+//Sets a point on the map (x,y) with bool value
+void Game::SetMap(float x, float y, bool value) {
+  map[static_cast<int>(x)][static_cast<int>(y)] = value;
+}
+
+//Checks is a point (x,y) is outside the grid
+bool Game::CheckEdges(float x, float y) const {
+  return (x > grid_width || x < 0 || y < 0 || y > grid_height);
 }
 
 int Game::GetScore() const { return score; }
