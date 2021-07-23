@@ -54,38 +54,34 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 }
 
 void Game::Update() {
-  tank1.Update();
+  tank1.Update(); //Check if tank has been dead for long enough if so make alive
   tank2.Update();
-  for(size_t i = 0; i < tank1.projectiles.size(); i++){
-    (tank1.projectiles[i])->Update();
+  for(size_t i = 0; i < tank1.projectiles.size(); i++){                 //iterating through all bullets stored in tank1.projectiles
+    (tank1.projectiles[i])->Update();                                   //progress position of bullets
     if((tank1.projectiles[i]->pos_x-tank2.pos_x < 1) && (tank1.projectiles[i]->pos_x-tank2.pos_x > -1) && (tank1.projectiles[i]->pos_y-tank2.pos_y < 1) && (tank1.projectiles[i]->pos_y-tank2.pos_y > -1)){
-      tank2.alive = false;
-      tank2.death_time = std::chrono::steady_clock::now();
-      tank1.score += 1;
-      tank1.projectiles.erase(tank1.projectiles.begin()+i);
-      return;
+      if(tank2.alive) tank1.score += 1;                                 //check if projectile has hit the other tank then give score if tank was alive
+      tank2.alive = false;                                              //Set tank to dead
+      tank2.death_time = std::chrono::steady_clock::now();              //reset timer 
+      tank1.projectiles.erase(tank1.projectiles.begin()+i);             //remove bullet from vector
+      return;                                                           //return so that empty vector element is not accessed
     }
-    if(CheckEdges(tank1.projectiles[i]->pos_x,tank1.projectiles[i]->pos_y)){
-      tank1.projectiles.erase(tank1.projectiles.begin()+i);
-      return;
-    }
-    if(CheckMap(tank1.projectiles[i]->pos_x,tank1.projectiles[i]->pos_y)) {
+    if(CheckMap(tank1.projectiles[i]->pos_x,tank1.projectiles[i]->pos_y)) {   //check if projectile has hit terrain
       SetMap(tank1.projectiles[i]->pos_x, tank1.projectiles[i]->pos_y, false);
+      tank1.projectiles.erase(tank1.projectiles.begin()+i);
+      return;
+    }
+    if(CheckEdges(tank1.projectiles[i]->pos_x,tank1.projectiles[i]->pos_y)){  //check if projectile has gone off the screen
       tank1.projectiles.erase(tank1.projectiles.begin()+i);
       return;
     }
     
   }
-  for(size_t i = 0; i < tank2.projectiles.size(); i++){
+  for(size_t i = 0; i < tank2.projectiles.size(); i++){                       //Repeat above for tank 2
     (tank2.projectiles[i])->Update();
     if((tank2.projectiles[i]->pos_x-tank1.pos_x < 1) && (tank2.projectiles[i]->pos_x-tank1.pos_x > -1) && (tank2.projectiles[i]->pos_y-tank1.pos_y < 1) && (tank2.projectiles[i]->pos_y-tank1.pos_y > -1)){
+      if(tank1.alive) tank2.score += 1;
       tank1.alive = false;
       tank1.death_time = std::chrono::steady_clock::now();
-      tank2.score += 1;
-      tank2.projectiles.erase(tank2.projectiles.begin()+i);
-      return;
-    }
-    if(CheckEdges(tank2.projectiles[i]->pos_x,tank2.projectiles[i]->pos_y)) {
       tank2.projectiles.erase(tank2.projectiles.begin()+i);
       return;
     }
@@ -93,6 +89,10 @@ void Game::Update() {
       SetMap(tank2.projectiles[i]->pos_x, tank2.projectiles[i]->pos_y, false);
       tank2.projectiles.erase(tank2.projectiles.begin()+i);
       return;
+    }
+    if(CheckEdges(tank2.projectiles[i]->pos_x,tank2.projectiles[i]->pos_y)) {
+    tank2.projectiles.erase(tank2.projectiles.begin()+i);
+    return;
     }
   }
 
@@ -114,4 +114,6 @@ bool Game::CheckEdges(float x, float y) const {
   return (x > grid_width || x < 0 || y < 0 || y > grid_height);
 }
 
-int Game::GetScore() const { return score; }
+int Game::GetTank1Score() { return tank1.GetScore(); } //return tank 1 score
+
+int Game::GetTank2Score() { return tank2.GetScore(); } //return tank 2 score

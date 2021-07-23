@@ -3,6 +3,7 @@
 #include "SDL.h"
 #include "tank.h"
 
+//Updates position of a tank 
 void Controller::PosUpdate(Tank &tank, Direction input) const {
   if(tank.alive == true){
   tank.PosUpdate(input);
@@ -10,6 +11,7 @@ void Controller::PosUpdate(Tank &tank, Direction input) const {
   return;
 }
 
+//Fires a bullet from a particular tank
 void Controller::Fire(Tank &tank, int team) const {
   if(tank.alive == true){
   tank.Fire(team);
@@ -17,7 +19,7 @@ void Controller::Fire(Tank &tank, int team) const {
   return;
 }
 
-//TODO: Update input to include WASD, E and / input
+
 void Controller::HandleInput(bool &running, Tank &tank1, Tank &tank2) const {
   SDL_Event e;
   while (SDL_PollEvent(&e)) {
@@ -25,7 +27,7 @@ void Controller::HandleInput(bool &running, Tank &tank1, Tank &tank2) const {
       running = false;
     } else if (e.type == SDL_KEYDOWN) {
       switch (e.key.keysym.sym) {
-        //Inputs for direction keys
+        //Inputs for direction keys (player 1 or 2 depending on which tank)
         case SDLK_UP:
           Controller::PosUpdate(tank1, Direction::kUp);
           break;
@@ -50,7 +52,7 @@ void Controller::HandleInput(bool &running, Tank &tank1, Tank &tank2) const {
         case SDLK_d:
           Controller::PosUpdate(tank2, Direction::kRight);
           break;
-        //Input for firing buttons  
+        //Input for firing buttons (originally used RIGHT CTRL but found that RIGHT CTRL + W closed the browser tab)
         case SDLK_KP_0:
           Controller::Fire(tank1, 1);
           break;

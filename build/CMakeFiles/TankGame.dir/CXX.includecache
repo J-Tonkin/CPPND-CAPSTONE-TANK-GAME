@@ -12,16 +12,6 @@ iostream
 controller.h
 /home/workspace/CppND-Capstone-Tank-Game/src/controller.h
 
-/home/workspace/CppND-Capstone-Tank-Game/src/controller.cpp
-controller.h
-/home/workspace/CppND-Capstone-Tank-Game/src/controller.h
-iostream
--
-SDL.h
-/home/workspace/CppND-Capstone-Tank-Game/src/SDL.h
-tank.h
-/home/workspace/CppND-Capstone-Tank-Game/src/tank.h
-
 /home/workspace/CppND-Capstone-Tank-Game/src/controller.h
 
 /home/workspace/CppND-Capstone-Tank-Game/src/game.cpp
@@ -48,26 +38,6 @@ renderer.h
 tank.h
 /home/workspace/CppND-Capstone-Tank-Game/src/tank.h
 
-/home/workspace/CppND-Capstone-Tank-Game/src/main.cpp
-iostream
--
-vector
--
-controller.h
-/home/workspace/CppND-Capstone-Tank-Game/src/controller.h
-game.h
-/home/workspace/CppND-Capstone-Tank-Game/src/game.h
-renderer.h
-/home/workspace/CppND-Capstone-Tank-Game/src/renderer.h
-
-/home/workspace/CppND-Capstone-Tank-Game/src/renderer.cpp
-renderer.h
-/home/workspace/CppND-Capstone-Tank-Game/src/renderer.h
-iostream
--
-string
--
-
 /home/workspace/CppND-Capstone-Tank-Game/src/renderer.h
 vector
 -
@@ -75,14 +45,6 @@ SDL.h
 /home/workspace/CppND-Capstone-Tank-Game/src/SDL.h
 tank.h
 /home/workspace/CppND-Capstone-Tank-Game/src/tank.h
-
-/home/workspace/CppND-Capstone-Tank-Game/src/tank.cpp
-tank.h
-/home/workspace/CppND-Capstone-Tank-Game/src/tank.h
-cmath
--
-iostream
--
 
 /home/workspace/CppND-Capstone-Tank-Game/src/tank.h
 vector

@@ -2,12 +2,14 @@
 #include <cmath>
 #include <iostream>
 
+//if tank is dead waits 2 seconds from last time it was hit then sets it back to alive
 void Tank::Update(){
   if(alive == false){
-    if(std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now()-death_time).count()>1000) alive = true;
+    if(std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now()-death_time).count()>2000) alive = true;
   }
 }
 
+//Update tank position (blocks if on edge of map)
 void Tank::PosUpdate(Direction input) {
     direction = input;
     switch (input){
@@ -26,8 +28,13 @@ void Tank::PosUpdate(Direction input) {
     }
 }
 
+//Creates a new bullet object and a unique pointer for it then store in projectile vector
 void Tank::Fire(int team) {
     projectiles.push_back(std::move(std::make_unique<Bullet>(pos_x,pos_y,direction,team,grid_width,grid_height)));
-    std::cout << "Number of bullets: " << projectiles.size() << std::endl;
     std::cout << "FIRE!" << std::endl;
+}
+
+//return score
+int Tank::GetScore(){
+  return score;
 }

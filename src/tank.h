@@ -20,6 +20,7 @@ class Tank {
   void Update();
   void Fire(int team);
   void PosUpdate(Direction input);
+  int GetScore();
 
   Direction direction = Direction::kUp;
 

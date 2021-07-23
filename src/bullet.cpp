@@ -1,6 +1,7 @@
 
 #include "bullet.h"
 
+//Progresses bullets position based on its speed and position (speed should be fixed)
 void Bullet::Update(){
     switch (dir){
         case Direction::kUp:
@@ -21,6 +22,4 @@ void Bullet::Update(){
         default:
         std::cout << "Default case" << std::endl;
     }
-
-    //std::cout << "Bullet x position: " << pos_x << "    Bullet y position: " << pos_y << std::endl;
 }

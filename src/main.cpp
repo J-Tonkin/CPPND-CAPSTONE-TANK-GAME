@@ -12,18 +12,17 @@ int main() {
   constexpr std::size_t kGridWidth{64};
   constexpr std::size_t kGridHeight{64};
 
-  std::vector<std::vector<bool>> map;
+  std::vector<std::vector<bool>> map;                         //Map showing if terrain is present or not
 
-  map.resize(static_cast<int>(kGridWidth));
-
-  for(int i = 0; i < static_cast<int>(kGridWidth); ++i){
-    map[i].resize(static_cast<int>(kGridHeight));
-    for(int j = 0; j < static_cast<int>(kGridHeight); ++j){
-      map[i][j] = false;
+  map.resize(static_cast<int>(kGridWidth));                   //resize vector to ensure we don't access a position that doesn't exist
+  for(int i = 0; i < static_cast<int>(kGridWidth); ++i){      //iterate through each vector
+    map[i].resize(static_cast<int>(kGridHeight));             //resize internal vectors
+    for(int j = 0; j < static_cast<int>(kGridHeight); ++j){   //iterate through each element of internal vector
+      map[i][j] = false;                                      //set all values to false
     }
   }
 
-  for(int i = ((kGridWidth/2) - 5); i < ((kGridWidth/2) + 5); ++i){
+  for(int i = ((kGridWidth/2) - 5); i < ((kGridWidth/2) + 5); ++i){ //insert a strip of terrain in the centre
     for(int j = 0; j < kGridHeight; ++j){
       map[i][j] = true;
     }
@@ -34,7 +33,12 @@ int main() {
   Game game(kGridWidth, kGridHeight, map);
   game.Run(controller, renderer, kMsPerFrame);
   std::cout << "Game has terminated successfully!\n";
-  std::cout << "Score: " << game.GetScore() << "\n";
-  //std::cout << "Size: " << game.GetSize() << "\n";
+  if(game.GetTank1Score() > game.GetTank2Score()){
+    std::cout << "Tank 1 Wins!" << std::endl;
+  } else if (game.GetTank2Score() > game.GetTank1Score()) {
+    std::cout << "Tank 2 Wins!" << std::endl;
+  } else {
+    std::cout << "Its a draw!" << std::endl;
+  }
   return 0;
 }
