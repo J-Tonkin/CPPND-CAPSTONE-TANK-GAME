@@ -5,11 +5,13 @@ This repo is the Capstone Project for a Udacity course on C++ programming course
 This game has two players, each controls a single tank that can move in four directions (up, down, left and right) the tanks can fire a projectile which will temporarily immobilise the opponent. The objective is to destroy the other player and increase your score by scoring multiple hits. The game also features destructable terrain in the middle of the map which can be moved through but will stop projectiles. Score is allocated for each hit on a living opponent.
 
 The controls are:  
-Player 1:   Movement: Direction Arrows  
-            Fire: NumPad 0 (Ensure numlock is off)  
+Player 1:     
+Movement: Direction Arrows  
+Fire: NumPad 0 (Ensure numlock is off)  
 
-Player 2:   Movement: WASD  
-            Fire: Space  
+Player 2:     
+Movement: WASD  
+Fire: Space  
 
 Rubric Marking:  
 The following rubric items have been included in the project:
@@ -58,7 +60,7 @@ Tank.cpp/.h uses a vector of unique pointers to hold the created bullet objects 
 1. Clone this repo.
 2. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `./SnakeGame`.
+4. Run it: `./TankGame`.
 
 
 ## CC Attribution-ShareAlike 4.0 International
